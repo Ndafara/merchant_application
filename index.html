@@ -146,11 +146,11 @@ var formSubmitButton = document.getElementById('submitBUtton');
 formSubmitButton.addEventListener('click',function(){
     var form = document.getElementById('apiDataForm');
 
-    if(!formData['agent']){
+    if(!form['agent']){
         alert('Agent is required')
         return false;
     }
-    if(!formData['plan[planId]']){
+    if(!form['plan[planId]']){
         alert('Plan ID is required')
         return false;
     }
